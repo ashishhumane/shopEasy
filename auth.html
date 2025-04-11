@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">sign In</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="auth-container section-p1">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <div class="auth-tab active" onclick="showTab('signin')">Sign In</div>
+                <div class="auth-tab" onclick="showTab('signup')">Sign Up</div>
+            </div>
+            
+            <!-- Sign In Form -->
+            <form action="php/signin-process.php" method="POST" class="auth-form active" id="signin-form">
+                <div class="form-group">
+                    <label for="signin-email">Email</label>
+                    <input type="email" id="signin-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password</label>
+                    <input type="password" id="signin-password" name="password" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+                <div class="auth-links">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+            
+            <!-- Sign Up Form -->
+            <form action="php/signup-process.php" method="POST" class="auth-form" id="signup-form">
+                <div class="form-group">
+                    <label for="signup-fullname">Full Name</label>
+                    <input type="text" id="signup-fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" name="confirm_password" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Main footer content (columns) -->
+        <div class="footer-content">
+            <div class="col">
+                <img class="logo" src="Images/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>wada dist.palghar</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon-Fri</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other columns (About, My Account, Install App) -->
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="auth.html">Sign in</a>
+                <a href="cart.html">View cart</a>
+                <a href="#">My wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Playstore</p>
+                <div class="row">
+                    <img src="Images/Footer/app.jpg" alt="">
+                    <img src="Images/Footer/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateways</p>
+                <img src="Images/Footer/pay.png" alt="">
+            </div>
+        </div>
+
+        <!-- Copyright section -->
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>2025, team1 - ShopEasy</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all forms
+            document.querySelectorAll('.auth-form').forEach(form => {
+                form.classList.remove('active');
+            });
+            
+            // Deactivate all tabs
+            document.querySelectorAll('.auth-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Activate selected form and tab
+            document.getElementById(tabName + '-form').classList.add('active');
+            document.querySelector(`.auth-tab:nth-child(${tabName === 'signin' ? 1 : 2})`).classList.add('active');
+        }
+
+    // Check for URL parameters to display error messages
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        if (error) {
+            let errorMessage = "";
+            
+            switch(error) {
+                case 'emptyfields':
+                    errorMessage = "All fields are required";
+                    break;
+                case 'passwordmismatch':
+                    errorMessage = "Passwords do not match";
+                    break;
+                case 'emailexists':
+                    errorMessage = "Email already exists";
+                    break;
+                case 'dberror':
+                    errorMessage = "Database error occurred";
+                    break;
+                case 'invalidpassword':
+                    errorMessage = "Invalid password";
+                    break;
+                case 'usernotfound':
+                    errorMessage = "User not found";
+                    break;
+                default:
+                    errorMessage = "An error occurred";
+            }
+            
+            if (errorMessage) {
+                alert(errorMessage);
+            }
+        }
+        
+        // Check if signup tab should be active
+        if (urlParams.get('signup') === 'true') {
+            showTab('signup');
+        }
+    };
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+

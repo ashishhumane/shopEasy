@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+<!-- Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section id="header">
+        <a href="#"><img src="Images/logo1.png" class="logo" alt="" ></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="auth.html">sign In</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li> 
+                
+            </ul>
+                 
+        </div>
+    </section>
+    <section id="hero">
+
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>
+            save more with the coupons &up to 70% off!
+        </p>
+        <button onclick="window.location.href='shop.html'"> Shop Now </button>
+
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="Images/Feature/f1.png" alt="">
+            <h6>Free shipping</h6>
+
+
+        </div>
+        <div class="fe-box">
+            <img src="Images/Feature/f2.png" alt="">
+            <h6>Online order</h6>
+
+
+        </div>
+        <div class="fe-box">
+            <img src="Images/Feature/f3.png" alt="">
+            <h6>Save money</h6>
+
+
+        </div>
+        <div class="fe-box">
+            <img src="Images/Feature/f4.png" alt="">
+            <h6>promotions</h6>
+
+
+        </div>
+        <div class="fe-box">
+            <img src="Images/Feature/f5.png" alt="">
+            <h6>Happy sell</h6>
+
+
+        </div>
+        <div class="fe-box">
+            <img src="Images/Feature/f1.png" alt="">
+            <h6>24/7 Support</h6>
+
+
+        </div>
+
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=1'">
+                <img src="Images/men's fashion/p1.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Patterned Resort Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="1" data-name="Patterned Resort Shirt" data-price="500" data-image="Images/men's fashion/p1.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=2'">
+                <img src="Images/men's fashion/p2.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Men Comfort Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>550</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="2" data-name="Men Comfort Opaque Printed Casual Shirt" data-price="550" data-image="Images/men's fashion/p2.png" data-brand="Campus Sutra" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=3'">
+                <img src="Images/men's fashion/p3.png" alt="">
+                <div class="des">
+                    <span>Mast & Harbour</span>
+                    <h5>Tropical Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="3" data-name="Tropical Printed Casual Shirt" data-price="800" data-image="Images/men's fashion/p3.png" data-brand="Mast & Harbour"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=4'">
+                <img src="Images/men's fashion/p4.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Geometric Block Oversized Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1000</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="4" data-name="Geometric Block Oversized Shirt" data-price="1000" data-image="Images/men's fashion/p4.png" data-brand="Campus Sutra"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=17'">
+                <img src="Images/men's fashion/p5.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Classic Regular Fit Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="17" data-name="Classic Regular Fit Printed Casual Shirt" data-price="1500" data-image="Images/men's fashion/p5.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=18'">
+                <img src="Images/men's fashion/p6.png" alt="">
+                <div class="des">
+                    <span>MASCLN SASSAFRAS</span>
+                    <h5>Tie-Dye Relaxed Fit Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>850</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="18" data-name="Tie-Dye Relaxed Fit Casual Shirt" data-price="850" data-image="Images/men's fashion/p6.png" data-brand="MASCLN SASSAFRAS"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=19'">
+                <img src="Images/men's fashion/p7.png" alt="">
+                <div class="des">
+                    <span>ZARA</span>
+                    <h5>Seaside Shirts Long Sleeve Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>2500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="19" data-name="Seaside Shirts Long Sleeve Shirt" data-price="2500" data-image="Images/men's fashion/p7.png" data-brand="ZARA"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=20'">
+                <img src="Images/men's fashion/p8.png" alt="">
+                <div class="des">
+                    <span>VASTRADO</span>
+                    <h5>Floral Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="20" data-name="Floral Opaque Printed Casual Shirt" data-price="1500" data-image="Images/men's fashion/p8.png" data-brand="VASTRADO"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Exciting deals</h4>
+        <h2>Up to <span>70% off</span> - All types of Accessories</h2>
+        <button class="normal" onclick="window.location.href='shop.html#accessories'">Explore more</button>
+    </section>
+    
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=1'">
+                <img src="Images/men's fashion/p1.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Patterned Resort Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="1" data-name="Patterned Resort Shirt" data-price="500" data-image="Images/men's fashion/p1.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=2'">
+                <img src="Images/men's fashion/p2.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Men Comfort Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>550</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="2" data-name="Men Comfort Opaque Printed Casual Shirt" data-price="550" data-image="Images/men's fashion/p2.png" data-brand="Campus Sutra" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=3'">
+                <img src="Images/men's fashion/p3.png" alt="">
+                <div class="des">
+                    <span>Mast & Harbour</span>
+                    <h5>Tropical Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="3" data-name="Tropical Printed Casual Shirt" data-price="800" data-image="Images/men's fashion/p3.png" data-brand="Mast & Harbour"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=4'">
+                <img src="Images/men's fashion/p4.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Geometric Block Oversized Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1000</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="4" data-name="Geometric Block Oversized Shirt" data-price="1000" data-image="Images/men's fashion/p4.png" data-brand="Campus Sutra"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=17'">
+                <img src="Images/men's fashion/p5.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Classic Regular Fit Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="17" data-name="Classic Regular Fit Printed Casual Shirt" data-price="1500" data-image="Images/men's fashion/p5.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=18'">
+                <img src="Images/men's fashion/p6.png" alt="">
+                <div class="des">
+                    <span>MASCLN SASSAFRAS</span>
+                    <h5>Tie-Dye Relaxed Fit Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>850</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="18" data-name="Tie-Dye Relaxed Fit Casual Shirt" data-price="850" data-image="Images/men's fashion/p6.png" data-brand="MASCLN SASSAFRAS"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=19'">
+                <img src="Images/men's fashion/p7.png" alt="">
+                <div class="des">
+                    <span>ZARA</span>
+                    <h5>Seaside Shirts Long Sleeve Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>2500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="19" data-name="Seaside Shirts Long Sleeve Shirt" data-price="2500" data-image="Images/men's fashion/p7.png" data-brand="ZARA"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='product-details.html?id=20'">
+                <img src="Images/men's fashion/p8.png" alt="">
+                <div class="des">
+                    <span>VASTRADO</span>
+                    <h5>Floral Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="20" data-name="Floral Opaque Printed Casual Shirt" data-price="1500" data-image="Images/men's fashion/p8.png" data-brand="VASTRADO"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+           
+
+    </section>
+
+   <section id="sm-banner" class="scetion-p1">
+    <div class="banner-box">
+        <h4>Crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dress is on sale at ShopEasy</span>
+        <button class="white" onclick="window.location.href='shop.html#womens-fashion'"> Learn more</button>
+    </div>
+
+    <div class="banner-box banner-box2">
+        <h4>spring/summer</h4>
+        <h2>upcoming season</h2>
+        <span>The best classic dress is on sale at ShopEasy</span>
+        <button class="white" onclick="window.location.href='shop.html'"> Collection</button>
+    </div>
+   </section>
+
+   <section id="banner3">
+    <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter collection 50% off</h3>
+    </div>
+
+    <div class="banner-box banner2">
+        <h2>NEW FOOTWEAR COLLECTION</h2>
+        <h3>spring/summer</h3>
+    </div>
+
+    <div class="banner-box banner3">
+        <h2>T-SHIRTS</h2>
+        <h3>New trendy prints</h3>
+    </div>
+   </section>
+   <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Enter your E-mail address">
+        <button class="normal">Sign Up</button>
+
+    </div>
+   </section>
+   <footer class="section-p1">
+    <!-- Main footer content (columns) -->
+    <div class="footer-content">
+      <div class="col">
+        <img class="logo" src="Images/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>wada dist.palghar</p>
+        <p><strong>Hours: </strong>10:00 - 18:00, Mon-Fri</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Other columns (About, My Account, Install App) -->
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+  
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="signin.html">Sign in</a>
+        <a href="cart.html">View cart</a>
+        <a href="#">My wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+  
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Playstore</p>
+        <div class="row">
+          <img src="Images/Footer/app.jpg" alt="">
+          <img src="Images/Footer/play.jpg" alt="">
+        </div>
+        <p>Secure Payment Gateways</p>
+        <img src="Images/Footer/pay.png" alt="">
+      </div>
+    </div>
+  
+    <!-- Copyright section (now outside .footer-content) -->
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i>2025, team1 - ShopEasy</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+
+</body> 
+</html>

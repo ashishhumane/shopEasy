@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEasy</title>
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section id="header">
+        <a href="index.html"><img src="Images/logo1.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">sign In</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li> 
+            </ul>
+        </div>
+    </section>
+
+    <section id="product-details" class="section-p1">
+        <div class="single-pro-image">
+            <img src="/placeholder.svg" alt="" id="main-img" width="100%">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="/placeholder.svg" alt="" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="/placeholder.svg" alt="" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="/placeholder.svg" alt="" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="/placeholder.svg" alt="" class="small-img" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6 id="product-brand"></h6>
+            <h4 id="product-name"></h4>
+            <h2 id="product-price"></h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1" min="1" id="quantity">
+            <button class="normal" id="add-to-cart">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span id="product-description">
+                The product details will be displayed here. This includes information about the material, fit, care instructions, and other relevant details about the product.
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=1'">
+                <img src="Images/men's fashion/p1.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Patterned Resort Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="1" data-name="Patterned Resort Shirt" data-price="500" data-image="Images/men's fashion/p1.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=2'">
+                <img src="Images/men's fashion/p2.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Men Comfort Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>550</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="2" data-name="Men Comfort Opaque Printed Casual Shirt" data-price="550" data-image="Images/men's fashion/p2.png" data-brand="Campus Sutra"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=3'">
+                <img src="Images/men's fashion/p3.png" alt="">
+                <div class="des">
+                    <span>Mast & Harbour</span>
+                    <h5>Tropical Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="3" data-name="Tropical Printed Casual Shirt" data-price="800" data-image="Images/men's fashion/p3.png" data-brand="Mast & Harbour"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=4'">
+                <img src="Images/men's fashion/p4.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Geometric Block Oversized Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                        <i class="fas fa-star star-icon"></i>
+                    </div>
+                    <h4><i class="fa-solid fa-indian-rupee-sign fa-xs"></i>1000</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="4" data-name="Geometric Block Oversized Shirt" data-price="1000" data-image="Images/men's fashion/p4.png" data-brand="Campus Sutra"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your E-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Main footer content (columns) -->
+        <div class="footer-content">
+          <div class="col">
+            <img class="logo" src="Images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>wada dist.palghar</p>
+            <p><strong>Hours: </strong>10:00 - 18:00, Mon-Fri</p>
+            <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Other columns (About, My Account, Install App) -->
+          <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+          </div>
+      
+          <div class="col">
+            <h4>My Account</h4>
+            <a href="signin.html">Sign in</a>
+            <a href="cart.html">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+      
+          <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Playstore</p>
+            <div class="row">
+              <img src="Images/Footer/app.jpg" alt="">
+              <img src="Images/Footer/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <img src="Images/Footer/pay.png" alt="">
+          </div>
+        </div>
+      
+        <!-- Copyright section (now outside .footer-content) -->
+        <div class="copyright">
+          <p><i class="fa-regular fa-copyright"></i>2025, team1 - ShopEasy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Get product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        
+        // Product data (in a real application, this would come from a database)
+        const products = {
+    1: {
+        name: "Patterned Resort Shirt",
+        brand: "H&M",
+        price: 500,
+        image: "Images/men's fashion/p1.png",
+        description: "A comfortable and stylish resort shirt with a modern pattern."
+    },
+    2: {
+        name: "Men Comfort Opaque Printed Casual Shirt",
+        brand: "Campus Sutra",
+        price: 550,
+        image: "Images/men's fashion/p2.png",
+        description: "Casual shirt with opaque print and premium comfort fabric."
+    },
+    3: {
+        name: "Tropical Printed Casual Shirt",
+        brand: "Mast & Harbour",
+        price: 800,
+        image: "Images/men's fashion/p3.png",
+        description: "Tropical-themed shirt, perfect for summer outings."
+    },
+    4: {
+        name: "Geometric Block Oversized Shirt",
+        brand: "Campus Sutra",
+        price: 1000,
+        image: "Images/men's fashion/p4.png",
+        description: "Oversized geometric shirt for a bold street style."
+    },
+    5: {
+        name: "Floral Print Maxi Dress",
+        brand: "ZARA",
+        price: 1200,
+        image: "Images/women's fashion/w1.png",
+        description: "Elegant maxi dress with a floral summer vibe."
+    },
+    6: {
+        name: "Casual Cotton Blouse",
+        brand: "H&M",
+        price: 750,
+        image: "Images/women's fashion/w2.png",
+        description: "Lightweight cotton blouse perfect for everyday wear."
+    },
+    7: {
+        name: "Elegant Evening Gown",
+        brand: "Mango",
+        price: 2500,
+        image: "Images/women's fashion/w3.png",
+        description: "Graceful gown for evening events and parties."
+    },
+    8: {
+        name: "Casual Denim Jacket",
+        brand: "Forever 21",
+        price: 1800,
+        image: "Images/women's fashion/w4.png",
+        description: "Trendy denim jacket with a relaxed fit."
+    },
+    9: {
+        name: "Classic Leather Watch",
+        brand: "Fossil",
+        price: 3500,
+        image: "Images/accessories/a1.png",
+        description: "Classic timepiece with a leather strap and timeless style."
+    },
+    10: {
+        name: "Aviator Sunglasses",
+        brand: "Ray-Ban",
+        price: 4200,
+        image: "Images/accessories/a2.png",
+        description: "Iconic aviator sunglasses with UV protection."
+    },
+    11: {
+        name: "Leather Wallet",
+        brand: "Hidesign",
+        price: 1200,
+        image: "Images/accessories/a3.png",
+        description: "Premium quality wallet made with genuine leather."
+    },
+    12: {
+        name: "Designer Handbag",
+        brand: "Baggit",
+        price: 2800,
+        image: "Images/accessories/a4.png",
+        description: "Stylish handbag with modern design and spacious interior."
+    },
+    13: {
+        name: "Matte Lipstick Set",
+        brand: "MAC",
+        price: 1800,
+        image: "Images/cosmetics/c1.png",
+        description: "Vibrant matte lipsticks for all-day wear and hydration."
+    },
+    14: {
+        name: "Fit Me Foundation",
+        brand: "Maybelline",
+        price: 750,
+        image: "Images/cosmetics/c2.png",
+        description: "Buildable foundation with a natural finish and coverage."
+    },
+    15: {
+        name: "Eyeconic Kajal",
+        brand: "Lakme",
+        price: 350,
+        image: "Images/cosmetics/c3.png",
+        description: "Long-lasting kajal for defined, bold eyes."
+    },
+    16: {
+        name: "Facial Cleanser",
+        brand: "Forest Essentials",
+        price: 950,
+        image: "Images/cosmetics/c4.png",
+        description: "Ayurvedic facial cleanser for glowing and clean skin."
+    },
+    17: {
+  name: "Classic Regular Fit Printed Casual Shirt",
+  brand: "H&M",
+  price: 1500,
+  image: "Images/men's fashion/p5.png",
+  description: "Modern fit with a classic print, ideal for everyday casual looks."
+},
+18: {
+  name: "Tie-Dye Relaxed Fit Casual Shirt",
+  brand: "MASCLN SASSAFRAS",
+  price: 850,
+  image: "Images/men's fashion/p6.png",
+  description: "Trendy tie-dye pattern in a comfortable relaxed fit."
+},
+19: {
+  name: "Seaside Shirts Long Sleeve Shirt",
+  brand: "ZARA",
+  price: 2500,
+  image: "Images/men's fashion/p7.png",
+  description: "Breezy and stylish shirt perfect for beach outings."
+},
+20: {
+  name: "Floral Opaque Printed Casual Shirt",
+  brand: "VASTRADO",
+  price: 1500,
+  image: "Images/men's fashion/p8.png",
+  description: "Subtle floral design printed on soft opaque cotton."
+},
+};
+
+        
+        // Display product details
+        if (productId && products[productId]) {
+            const product = products[productId];
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-brand').textContent = product.brand;
+            document.getElementById('product-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.price}`;
+            document.getElementById('product-description').textContent = product.description;
+            document.getElementById('main-img').src = product.image;
+            
+            // Set all small images to the same image for now
+            const smallImgs = document.querySelectorAll('.small-img');
+            smallImgs.forEach(img => {
+                img.src = product.image;
+            });
+            
+            // Add to cart functionality
+            document.getElementById('add-to-cart').addEventListener('click', function() {
+                const quantity = parseInt(document.getElementById('quantity').value);
+                addToCart(productId, product.name, product.price, product.image, product.brand, quantity);
+                alert('Product added to cart!');
+            });
+        } else {
+            // Handle case where product is not found
+            document.getElementById('product-name').textContent = "Product Not Found";
+            document.getElementById('product-description').textContent = "The requested product could not be found.";
+        }
+        
+        // Function to add product to cart
+        function addToCart(id, name, price, image, brand, quantity) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            // Check if product already exists in cart
+            const existingProductIndex = cart.findIndex(item => item.id === id);
+            
+            if (existingProductIndex !== -1) {
+                // Update quantity if product already exists
+                cart[existingProductIndex].quantity += quantity;
+            } else {
+                // Add new product to cart
+                cart.push({
+                    id: id,
+                    name: name,
+                    price: price,
+                    image: image,
+                    brand: brand,
+                    quantity: quantity
+                });
+            }
+            
+            // Save cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        
+        // Small image click functionality
+        const smallImgs = document.querySelectorAll('.small-img');
+        smallImgs.forEach(img => {
+            img.addEventListener('click', function() {
+                document.getElementById('main-img').src = this.src;
+            });
+        });
+    </script>
+</body>
+</html>

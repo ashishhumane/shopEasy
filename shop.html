@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth.html">sign In</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>#stayhome</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+
+    <section id="categories" class="section-p1">
+        <h2>Shop by Category</h2>
+        <div class="category-container">
+            <div class="category" id="mens-fashion">
+                <img src="Images/categories/mens1.jpg" alt="Men's Fashion">
+                <h3>Men's Fashion</h3>
+            </div>
+            <div class="category" id="womens-fashion">
+                <img src="Images/categories/female.jpg" alt="Women's Fashion">
+                <h3>Women's Fashion</h3>
+            </div>
+            <div class="category" id="accessories">
+                <img src="Images/categories/accessories.jpg" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+            <div class="category" id="cosmetics">
+                <img src="Images/categories/cosmatics.jpg" alt="Cosmetics">
+                <h3>Cosmetics</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Men's Fashion</h2>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=1'">
+                <img src="Images/men's fashion/p1.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Patterned Resort Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="1" data-name="Patterned Resort Shirt" data-price="500" data-image="Images/men's fashion/p1.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=2'">
+                <img src="Images/men's fashion/p2.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Men Comfort Opaque Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹550</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="2" data-name="Men Comfort Opaque Printed Casual Shirt" data-price="550" data-image="Images/men's fashion/p2.png" data-brand="Campus Sutra" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=3'">
+                <img src="Images/men's fashion/p3.png" alt="">
+                <div class="des">
+                    <span>Mast & Harbour</span>
+                    <h5>Tropical Printed Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="3" data-name="Tropical Printed Casual Shirt" data-price="800" data-image="Images/men's fashion/p3.png" data-brand="Mast & Harbour"><img src="Images/cart-icon.png" alt="" class="cart-icon"></i></a>
+            </div>
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=4'">
+                <img src="Images/men's fashion/p4.png" alt="">
+                <div class="des">
+                    <span>Campus Sutra</span>
+                    <h5>Geometric Block Oversized Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1000</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="4" data-name="Geometric Block Oversized Shirt" data-price="1000" data-image="Images/men's fashion/p4.png" data-brand="Campus Sutra" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Women's Fashion</h2>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=5'">
+                <img src="Images/women's fashion/w1.png" alt="">
+                <div class="des">
+                    <span>ZARA</span>
+                    <h5>Floral Print Maxi Dress</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1200</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="5" data-name="Floral Print Maxi Dress" data-price="1200" data-image="Images/women's fashion/w1.png" data-brand="ZARA"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=6'">
+                <img src="Images/women's fashion/w2.png" alt="">
+                <div class="des">
+                    <span>H&M</span>
+                    <h5>Casual Cotton Blouse</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹750</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="6" data-name="Casual Cotton Blouse" data-price="750" data-image="Images/women's fashion/w2.png" data-brand="H&M"><img src="Images/cart-icon.png" alt="" class="cart-icon"></i></a>
+            </div>
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=7'">
+                <img src="Images/women's fashion/w3.png" alt="">
+                <div class="des">
+                    <span>Mango</span>
+                    <h5>Elegant Evening Gown</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹2500</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="7" data-name="Elegant Evening Gown" data-price="2500" data-image="Images/women's fashion/w3.png" data-brand="Mango" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=8'">
+                <img src="Images/women's fashion/w4.png" alt="">
+                <div class="des">
+                    <span>Forever 21</span>
+                    <h5>Casual Denim Jacket</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="8" data-name="Casual Denim Jacket" data-price="1800" data-image="Images/women's fashion/w4.png" data-brand="Forever 21"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Accessories</h2>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product-details.html?id=9'">
+                <img src="Images/accessories/a1.png" alt="">
+                <div class="des">
+                    <span>Fossil</span>
+                    <h5>Classic Leather Watch</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹3500</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="9" data-name="Classic Leather Watch" data-price="3500" data-image="Images/accessories/a1.png" data-brand="Fossil"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=10'">
+                <img src="Images/accessories/a2.png" alt="">
+                <div class="des">
+                    <span>Ray-Ban</span>
+                    <h5>Aviator Sunglasses</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹4200</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="10" data-name="Aviator Sunglasses" data-price="4200" data-image="Images/accessories/a2.png" data-brand="Ray-Ban" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=11'">
+                <img src="Images/accessories/a3.png" alt="">
+                <div class="des">
+                    <span>Hidesign</span>
+                    <h5>Leather Wallet</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1200</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="11" data-name="Leather Wallet" data-price="1200" data-image="Images  class="add-cart" data-id="11" data-name="Leather Wallet" data-price="1200" data-image="Images/accessories/a3.png" data-brand="Hidesign"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=12'">
+                <img src="Images/accessories/a4.png" alt="">
+                <div class="des">
+                    <span>Baggit</span>
+                    <h5>Designer Handbag</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹2800</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="12" data-name="Designer Handbag" data-price="2800" data-image="Images/accessories/a4.png" data-brand="Baggit"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Cosmetics</h2>
+        <div class="pro-container">
+            <div class="pro out-of-stock" onclick="window.location.href='product-details.html?id=13'">
+                <img src="Images/cosmetics/c1.png" alt="">
+                <div class="des">
+                    <span>MAC</span>
+                    <h5>Matte Lipstick Set</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1800</h4>
+                    <p class="stock-info">Available in 2 days</p>
+                    <button class="watchlist-btn"><i class="fa-solid fa-bookmark"></i> Save to Watchlist</button>
+                </div>
+                <a href="#" class="add-cart" data-id="13" data-name="Matte Lipstick Set" data-price="1800" data-image="Images/cosmetics/c1.png" data-brand="MAC" data-stock="out"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=14'">
+                <img src="Images/cosmetics/c2.png" alt="">
+                <div class="des">
+                    <span>Maybelline</span>
+                    <h5>Fit Me Foundation</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹750</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="14" data-name="Fit Me Foundation" data-price="750" data-image="Images/cosmetics/c2.png" data-brand="Maybelline"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=15'">
+                <img src="Images/cosmetics/c3.png" alt="">
+                <div class="des">
+                    <span>Lakme</span>
+                    <h5>Eyeconic Kajal</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹350</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="15" data-name="Eyeconic Kajal" data-price="350" data-image="Images/cosmetics/c3.png" data-brand="Lakme"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product-details.html?id=16'">
+                <img src="Images/cosmetics/c4.png" alt="">
+                <div class="des">
+                    <span>Forest Essentials</span>
+                    <h5>Facial Cleanser</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹950</h4>
+                </div>
+                <a href="#" class="add-cart" data-id="16" data-name="Facial Cleanser" data-price="950" data-image="Images/cosmetics/c4.png" data-brand="Forest Essentials"><img src="Images/cart-icon.png" alt="" class="cart-icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter your E-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="footer-content">
+            <div class="col">
+                <img class="logo" src="Images/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>wada dist.palghar</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon-Fri</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="auth.html">Sign in</a>
+                <a href="cart.html">View cart</a>
+                <a href="#">My wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Playstore</p>
+                <div class="row">
+                    <img src="Images/Footer/app.jpg" alt="">
+                    <img src="Images/Footer/play.jpg" alt="">
+                </div>
+                <p>Secure Payment Gateways</p>
+                <img src="Images/Footer/pay.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>2025, team1 - ShopEasy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
